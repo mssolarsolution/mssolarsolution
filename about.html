@@ -279,7 +279,7 @@
     <!-- About End -->
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
       <div class="container">
         <div
           class="text-center mx-auto mb-5 wow fadeInUp"
@@ -317,7 +317,7 @@
                 <span>Owner 03284197079</span>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="team-item rounded overflow-hidden">
               <div class="d-flex">
@@ -380,7 +380,7 @@
     <!-- Team End -->
 
     <!-- Footer Start -->
-    <div
+<div
       class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
@@ -506,7 +506,12 @@
 
     <!-- Back to Top -->
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923284197079" target="_blank" id="whatsapp-float">
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://api.whatsapp.com/send?phone=923284197079"
+      id="whatsapp-float"
+      target="_blank"
+    >
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
         alt="WhatsApp"
@@ -521,8 +526,11 @@
         background-color: #25d366;
         border-radius: 50%;
         padding: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: transform 0.2s ease-in-out;
       }
 
@@ -534,6 +542,19 @@
 
       #whatsapp-float:hover {
         transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        #whatsapp-float {
+          bottom: 15px;
+          right: 15px;
+          padding: 10px;
+        }
+
+        #whatsapp-float img {
+          width: 36px;
+          height: 36px;
+        }
       }
     </style>
 
